@@ -4,7 +4,7 @@ import styles from './Header.css';
 
 export default function Header() {
   const entries = useContext(PlannerContext).entries.length;
-  console.log(entries);
+
   return (
     <header className={styles.header}>
       <h2>My Planner</h2>
