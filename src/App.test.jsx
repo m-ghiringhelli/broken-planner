@@ -28,5 +28,6 @@ describe('Planner App', () => {
 
     // Check that our item got added
     screen.getByText('My test entry!');
+    screen.debug();
   });
 });

@@ -43,7 +43,7 @@ const PlannerProvider = ({ children }) => {
   }, []);
 
   const addEntry = (entry) => {
-    console.log(...entry);
+    console.log({ ...entry });
     const payload = {
       ...entry,
       date: parseDate(entry.date),
