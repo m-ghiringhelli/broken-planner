@@ -1,11 +1,10 @@
-import { useContext } from 'react';
-import { PlannerContext } from '../../context/PlannerContext';
+import { useEntries } from '../../context/PlannerContext';
 import Entry from './EntryItem';
 import styles from './EntryList.css';
 
 export default function Entries() {
   // TODO: Replace with the entries stored in PlannerContext
-  const entries = useContext(PlannerContext).entries;
+  const { entries } = useEntries();
 
   return (
     <ul className={styles.list}>

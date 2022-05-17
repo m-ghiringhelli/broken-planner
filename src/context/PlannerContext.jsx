@@ -51,6 +51,8 @@ const PlannerProvider = ({ children }) => {
     return payload;
   };
 
+
+
   const getEntry = (id) => {
     return entries.find((note) => note.id === Number(id));
   };
