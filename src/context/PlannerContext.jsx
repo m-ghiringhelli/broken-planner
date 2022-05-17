@@ -43,6 +43,7 @@ const PlannerProvider = ({ children }) => {
   }, []);
 
   const addEntry = (entry) => {
+    console.log({ ...entry });
     const payload = {
       ...entry,
       date: parseDate(entry.date),
@@ -50,6 +51,8 @@ const PlannerProvider = ({ children }) => {
     dispatch({ type: 'create', payload });
     return payload;
   };
+
+
 
   const getEntry = (id) => {
     return entries.find((note) => note.id === Number(id));
